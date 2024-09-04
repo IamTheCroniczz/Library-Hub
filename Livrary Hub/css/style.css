@@ -1,134 +1,277 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Library Hub</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+             <img src="/img/logo.png" alt="">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Nosso Catálogo</a></li>
+                <li><a href="#">Livros Mais Pedidos</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul class="mobile-nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Nosso Catálogo</a></li>
+                <li><a href="#">Livros Mais Pedidos</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+    </header>
 
-body {
-    font-family: "PT Sans", sans-serif;
-    color: white;
-    background-color: white;
-    margin: 0%;
-    padding: 0%;
-    height: 100vh;
+    <div class="div-master">
+        <h4 class="title">Nosso Catálogo</h4>
+        <div class="scroll-container">
+            <div class="carrossel">
+                <!-- Imagens para a seção "Nosso Catálogo" -->
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/8WambNXFVcMyTeCWajNEYfT80Xp.jpg" alt="Sing and Don't Cry">
+                    <div class="caption">Sing and Don't Cry</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/aE9WqOApdRYsowsGE0118dyA4c9.jpg" alt="Mission: Cross">
+                    <div class="caption">Mission: Cross</div>
+                </div>
+                <div class="item-c">
+                    <img src="
+                    http://image.tmdb.org/t/p/w500/wBzsGjJR4b3K3v3fY7jeu0wiTod.jpg" alt="Janet Planet">
+                    <div class="caption">Janet Planet</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/5BfcYFhRVlgWLFo4SCkQNsIWzyy.jpg" alt="Hit Man">
+                    <div class="caption">Hit Man</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/iADOJ8Zymht2JPMoy3R7xceZprc.jpg" alt="Furiosa: A Mad Max Saga">
+                    <div class="caption">Furiosa: A Mad Max Saga</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/uln9Efc2vzDOl0Fue2BPs8l1WO7.jpg" alt="Oddity">
+                    <div class="caption">Oddity</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/5aj8vVGFwGVbQQs26ywhg4Zxk2L.jpg" alt="Longlegs">
+                    <div class="caption">Longlegs</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/rUcuageYgv9SsJoWuc0seRWG6JC.jpg" alt="Thelma">
+                    <div class="caption">Thelma</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/PywbVPeIhBFc33QXktnhMaysmL.jpg" alt="Twilight of the Warriors: Walled In">
+                    <div class="caption">Twilight of the Warriors: Walled In</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/tOSIz25VWSuCVIqCRV8cTVKSn7Z.jpg" alt="Last Summer">
+                    <div class="caption">Last Summer</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/m2zXTuNPkywdYLyWlVyJZW2QOJH.jpg" alt="Kill">
+                    <div class="caption">Kill</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg" alt="Inside Out 2">
+                    <div class="caption">Inside Out 2</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/qKkaG7HVFVe7C1JuxTGwNz0eSyL.jpg" alt="Am I OK?">
+                    <div class="caption">Am I OK?</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/1Cg4G1iQpisGXmWqns5uo4I6fPk.jpg" alt="Babes">
+                    <div class="caption">Babes</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/qTb6sSRt8Pw96JTan8ezU2xO0FU.jpg" alt="The Bikeriders">
+                    <div class="caption">The Bikeriders</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/6XlHOx0JQNgYjuJ4YQKbrt4Gd4d.jpg" alt="Handling the Undead">
+                    <div class="caption">Handling the Undead</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/hPfWHgq07nXbeldwEGxWB4JqwtE.jpg" alt="In a Violent Nature">
+                    <div class="caption">In a Violent Nature</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/hU42CRk14JuPEdqZG3AWmagiPAP.jpg" alt="A Quiet Place: Day One">
+                    <div class="caption">A Quiet Place: Day One</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/5j37QHXuNygzEa2X54RMlOb6hj3.jpg" alt="Starve Acre">
+                    <div class="caption">Starve Acre</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/xGImONYZnE2Wxc7N99JAifREs5Z.jpg" alt="The Imaginary">
+                    <div class="caption">The Imaginary</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/e5ZqqPlhKstzB4geibpZh38w7Pq.jpg" alt="The Convert">
+                    <div class="caption">The Convert</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/gKkl37BQuKTanygYQG1pyYgLVgf.jpg" alt="Kingdom of the Planet of the Apes">
+                    <div class="caption">Kingdom of the Planet of the Apes</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/eYnHRMGtbbHt1XLNwgx2LNcUvsZ.jpg" alt="Widow Clicquot">
+                    <div class="caption">Widow Clicquot</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/rstcAnBeCkxNQjNp3YXrF6IP1tW.jpg" alt="Kalki 2898-AD">
+                    <div class="caption">Kalki 2898-AD</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/pjnD08FlMAIXsfOLKQbvmO0f0MD.jpg" alt="Twisters">
+                    <div class="caption">Twisters</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/b33nnKl1GSFbao4l3fZDDqsMx0F.jpg" alt="Alien: Romulus">
+                    <div class="caption">Alien: Romulus</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/ArvoFK6nlouZRxYmtIOUzKIrg90.jpg" alt="MaXXXine">
+                    <div class="caption">MaXXXine</div>
+                </div>
+            </div>
+            <div class="before" onclick="scrollLeft()">&#9664;</div>
+            <div class="after" onclick="scrollRight()">&#9654;</div>
+        </div>
+    </div>
 
-}
+    <div class="div-master">
+        <h4 class="title">Livros Mais Pedidos</h4>
+        <div class="scroll-container">
+            <div class="carrossel">
+                <!-- Reutilizando as mesmas imagens em uma ordem diferente -->
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/aE9WqOApdRYsowsGE0118dyA4c9.jpg" alt="Mission: Cross">
+                    <div class="caption">Mission: Cross</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/5aj8vVGFwGVbQQs26ywhg4Zxk2L.jpg" alt="Longlegs">
+                    <div class="caption">Longlegs</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/rUcuageYgv9SsJoWuc0seRWG6JC.jpg" alt="Thelma">
+                    <div class="caption">Thelma</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/qTb6sSRt8Pw96JTan8ezU2xO0FU.jpg" alt="The Bikeriders">
+                    <div class="caption">The Bikeriders</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/hPfWHgq07nXbeldwEGxWB4JqwtE.jpg" alt="In a Violent Nature">
+                    <div class="caption">In a Violent Nature</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/eYnHRMGtbbHt1XLNwgx2LNcUvsZ.jpg" alt="Widow Clicquot">
+                    <div class="caption">Widow Clicquot</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/e5ZqqPlhKstzB4geibpZh38w7Pq.jpg" alt="The Convert">
+                    <div class="caption">The Convert</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/1Cg4G1iQpisGXmWqns5uo4I6fPk.jpg" alt="Babes">
+                    <div class="caption">Babes</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/hU42CRk14JuPEdqZG3AWmagiPAP.jpg" alt="A Quiet Place: Day One">
+                    <div class="caption">A Quiet Place: Day One</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/6XlHOx0JQNgYjuJ4YQKbrt4Gd4d.jpg" alt="Handling the Undead">
+                    <div class="caption">Handling the Undead</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/xGImONYZnE2Wxc7N99JAifREs5Z.jpg" alt="The Imaginary">
+                    <div class="caption">The Imaginary</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg" alt="Inside Out 2">
+                    <div class="caption">Inside Out 2</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/5j37QHXuNygzEa2X54RMlOb6hj3.jpg" alt="Starve Acre">
+                    <div class="caption">Starve Acre</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/uln9Efc2vzDOl0Fue2BPs8l1WO7.jpg" alt="Oddity">
+                    <div class="caption">Oddity</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/8WambNXFVcMyTeCWajNEYfT80Xp.jpg" alt="Sing and Don't Cry">
+                    <div class="caption">Sing and Don't Cry</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/pjnD08FlMAIXsfOLKQbvmO0f0MD.jpg" alt="Twisters">
+                    <div class="caption">Twisters</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/tOSIz25VWSuCVIqCRV8cTVKSn7Z.jpg" alt="Last Summer">
+                    <div class="caption">Last Summer</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/iADOJ8Zymht2JPMoy3R7xceZprc.jpg" alt="Furiosa: A Mad Max Saga">
+                    <div class="caption"></div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/5BfcYFhRVlgWLFo4SCkQNsIWzyy.jpg" alt="Hit Man">
+                    <div class="caption">Hit Man</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/m2zXTuNPkywdYLyWlVyJZW2QOJH.jpg" alt="Kill">
+                    <div class="caption">Kill</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/qKkaG7HVFVe7C1JuxTGwNz0eSyL.jpg" alt="Am I OK?">
+                    <div class="caption">Am I OK?</div>
+                </div>
+                <div class="item-c">
+                    <img src="http://image.tmdb.org/t/p/w500/6XlHOx0JQNgYjuJ4YQKbrt4Gd4d.jpg" alt="Handling the Undead">
+                    <div class="caption">Handling the Undead</div>
+                </div>
+            </div>
+            <div class="before" onclick="scrollLeft()">&#9664;</div>
+            <div class="after" onclick="scrollRight()">&#9654;</div>
+        </div>
+    </div>
 
-nav {
-    margin: 0%;
-    width: 100%;
-    padding: 0%;
-    background-color: #0085FF;
-    display: flex;
-    justify-content: start;
+    <script>
+        function scrollLeft() {
+            const container = document.querySelector('.scroll-container');
+            container.scrollBy({
+                left: -container.clientWidth,
+                behavior: 'smooth'
+            });
+        }
 
-}
-
-ul {
-    display: inline-block;
-    list-style-type: none;
-    width: 50%;
-    margin: 0%;
-    align-items: center;
-}
-
-.menu {
-    display: flex;
-    justify-content: start;
-}
-
-.imagem {
-    display: flex;
-    justify-content: end;
-    margin: 0%;
-}
-
-li {
-    margin: 15px;
-
-}
-
-.logo {
-    width: 100px;
-    height: 100px;
-    margin: 0%;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-a:hover{
-    background-color:#2f6aa1 ;
-    width: 15px;
-    border-radius: 7px;
-}
-
-.carousel {
-    border-radius: 20px;
-    width: 80%;
-    max-width: 600px;
-    overflow: hidden;
-    position: relative;
-}
-
-.carousel-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel-card {
-    min-width: 100%;
-    box-sizing: border-box;
-    background-color: white;
-    border: 1px solid #ddd;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0 10px;
-    text-align: center;
-    border-radius: 20px;
-}
-
-.carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.carousel-button.prev {
-    left: 10px;
-    border-radius: 20px;
-    background-color: #0085FF;
-}
-
-.carousel-button.next {
-    right: 10px;
-    border-radius: 20px;
-    color: #ddd;
-  background-color: #0085FF;
-}
-
-.carousel-button.next:hover{
-    background-color: #2f6aa1;
-    width: 15px;
-}
-
-.carousel-button.prev:hover{
-    background-color: #2f6aa1;
-    width: 15px;
-}
-
-.item {
-    max-width: 600px;
-    width: 70%;
-}
-
-.main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10%;
-}
+        function scrollRight() {
+            const container = document.querySelector('.scroll-container');
+            container.scrollBy({
+                left: container.clientWidth,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
